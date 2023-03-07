@@ -115,7 +115,108 @@ CMS screenshots below:
 ## How to use
 
 * There are four projects, so you should deploy each separately.
-* Detailes will be available later...
+
+  For webapp:
+
+  ```bash
+  
+  # if you already cloned this project, ignore it
+  git clone https://github.com/suency/rabbitgo_services.git # clone the whole project
+  cd webapp #webapp directory
+  npm install # install dependencies
+  
+  npm run dev # start this project
+  ## you should configure your own server
+  ```
+
+  For webapp-api:
+
+  ``` bash
+  # if you already cloned this project, ignore it
+  git clone https://github.com/suency/rabbitgo_services.git # clone the whole project
+  cd webapp-api #webapp directory
+  npm install # install dependencies
+  
+  npm run start # start this project
+  npm run both # it will run the bot services and backend services concurrently
+  ## also you should configure your own server, such as api and so on
+  ```
+
+  For cms:
+
+  ```bash
+  # if you already cloned this project, ignore it
+  
+  git clone https://github.com/suency/rabbitgo_services.git # clone the whole project
+  cd cms #webapp directory
+  npm install # install dependencies if error, you should switch node version 13.14
+  
+  npm run start # start this project
+  
+  ## also you should configure your own server, such as api and so on
+  
+  #If you fail to install: try to add
+  #[url "https://"]
+  #    insteadOf = git://
+  #to your .gitconfig in you ~path, and also you should include package.json.lock which #makes specific version for all required modules. (due to network reasons)
+  
+  #Make sure you can compile everything, and no error appears.
+  #The project is based on vue2 and many modules are old. There are no other methods to #make it be new because it is very difficult to convert vue2 to vue3.
+  #Node version is v13.14.0, it's old.
+  ```
+
+  For cms-api:
+
+  1. Use thinkphp 6 for its api interface, so it requires **php7.4** and **mysql** version is not limited.
+
+  2. Host the public fold in you server, and more imortant is. You should configure nginx like this
+
+     ``` nginx
+     server {
+         listen 8065;
+         server_name localhost;
+         location / {
+             index  index.htm index.html index.php;
+             if (!-e $request_filename) {
+                rewrite  ^/(.*)$  /index.php/$1  last;
+                break;
+             }
+         }
+     
+         location ~ \.php/?.*$ {
+         		# you can configure your own cors...
+             add_header Access-Control-Allow-Origin *;
+             #add_header Access-Control-Allow-Methods GET,POST,OPTIONS;    
+             #add_header Access-Control-Allow-Headers X-Requested-With;
+             add_header 'Access-Control-Allow-Methods' *;
+             add_header 'Access-Control-Allow-Credentials' 'true';
+             add_header 'Access-Control-Allow-Headers' *;
+         
+             root        /project_path/public;
+             fastcgi_pass   127.0.0.1:9000;
+             fastcgi_index  index.php;
+             include        fastcgi.conf;
+             set $fastcgi_script_name2 $fastcgi_script_name;
+             if ($fastcgi_script_name ~ "^(.+\.php)(/.+)$") {
+                 set $fastcgi_script_name2 $1;
+                 set $path_info $2;
+             }
+             fastcgi_param   PATH_INFO $path_info;
+             fastcgi_param   SCRIPT_FILENAME   $document_root$fastcgi_script_name2;
+             fastcgi_param   SCRIPT_NAME   $fastcgi_script_name2;
+         }
+         
+         error_page   500 502 503 504  /50x.html;
+         location = /50x.html {
+             root   html;
+         }
+     }
+     ```
+
+     3. Configure you database: It's very easy. Just execute the sql file and change the database configuration in the backend configuration file. SQL file will be released later!
+     4. Enjoy!
+
+​	
 
 
 

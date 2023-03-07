@@ -8,8 +8,7 @@
   RabbitGo
   <br>
 </h1>
-
-<h4 align="center">A learn to earn platform based on Ton blockchain</h4>
+<h2 align="center">A learn to earn platform based on Ton blockchain</h2>
 
 <p align="center">
   <img src="https://badgen.net/badge/license/MIT/green" style="margin-right:-10px">

@@ -25,6 +25,7 @@
   <a href="#key-features">Key Features</a> •
   <a href="#ScreenShots">ScreenShots</a> •
   <a href="#How-to-use">How to use</a>
+  <a href="#Support">Support</a>
 </p>
 
 ## About RabbotGo
@@ -215,6 +216,10 @@ CMS screenshots below:
 
      3. Configure you database: It's very easy. Just execute the sql file and change the database configuration in the backend configuration file. SQL file will be released later!
      4. Enjoy!
+
+## Support
+
+* If you have any questions, please contact me sunpled@gmail.com or contact WeChat: suency
 
 ​	
 

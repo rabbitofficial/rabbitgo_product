@@ -78,9 +78,12 @@
 * Dynamic router
 
   - The menu is generated based on the data on database
+
   - Access control for different roles
 
-  
+    <div>
+      <img src=https://raw.githubusercontent.com/suency/rabbitgo_services/main/screenshots/compress/RabbitGo-Tech-Stack.png >
+      </div>
 
 ## ScreenShots
 

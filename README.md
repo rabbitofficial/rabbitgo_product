@@ -79,11 +79,12 @@
   - The menu is generated based on the data on database
   - Access control for different roles
 
+## Architecture Designs
     <div>
       <img src=https://raw.githubusercontent.com/suency/rabbitgo_services/main/screenshots/compress/RabbitGo-Tech-Stack.png >
       </div>
 
-## ScreenShots
+## Key Features' ScreenShots
 
 Web app screenshots below:
 
@@ -219,9 +220,7 @@ CMS screenshots below:
 
 ## Support
 
-* If you have any questions, please contact me info@rabbitgo.io， or sunpled@gmail.com
-
-​	
+* If you have any questions, please contact us info@rabbitgo.io，sunpled@gmail.com
 
 
 

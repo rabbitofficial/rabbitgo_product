@@ -40,45 +40,43 @@
 ## Tech Overview
 
 * There are four projects here following are explained for each
-* Webapp:
-  * Core project  is embened on telegram client and it can be visited via a telegram bot and  interacct with Ton Blockchain like earning RBT tokens via learning courses and get NFTs sometimes
+* Webapp (Learn/Quest to earn):
+  * Core project  is embened on telegram clients and it can be visited via a telegram bot and interacct with Ton Blockchain like earning RBT tokens via learning courses and get NFTs sometimes
 * Webapp-api:
   * This is a backend service for webapp project which is written in Node.js and providing correspoinding services.
-* Cms:
+* Cms(Customer management system):
   * It is froent end part of a content management system which is for maintenance of webapp project. For example, we can monitor the data transactions daily and pulibish the new learning courses.
 * Cms-api:
   * This is a backend service for Cms project which is written in Thinkphp framework which is similar to laravel php framework. It is very simple to create a backend service in MVC model.
 
 ## Key Features
 
-* Users can earn points via attending courses via telegram webbapps
-
-* Users can redeem points with real tokens which is on Ton Blockchain anytime
-
-* Users can acquire NFTs if they satisfy certain conditions
-
-* Users can do the quiz to test how they understand the knowledge and have the change to get the points
-
-* ChatGPT system for users
+* Webapp (Learn/Quest to earn)
+  * Use the rabbitgo_bot to access the learning materials with designed UI
+  * Take quizzes based on the learning materials and get results
+  * Users can earn points via attending courses via telegram webbapps
+  * Users can connect wallets to collect tokens and NFTs
+  * Users can redeem points with real tokens which is on Ton Blockchain anytime
+  * Users can acquire NFTs if they satisfy certain conditions
+  * Users can do the quiz to test how they understand the knowledge and have the change to get the points
+  * ChatGPT system for users so that user are able to ask questions within the bots directly 
 
 * Zero Knowledge Proofs for users who would like to protect their data
-
   * Based on SNARK mechanism and interaction with AR storage smart contract and Ethreum smart contract
   * Currently it is under development 
   
 * CMS features
-
+  * Data analytics tools that combines both onchain (wallet transaction details) and offchain data (tg users details)
   * Operations mangagers can monitor the daily activity data online, eg. daily transactions, new user registrations and points they redeem
-  * Operations mangagers can publish new courses and daily news
-  * Marketing department can use the data to do data analysis
+  * Operations mangagers/content creators can publish new courses and daily news
+  * Graph management tools which allow the user to upload graph which can be stored in decentralised storage such as FVM and Arweave.
+  * Marketing department can use the data to do data analysis for growth
   * Developers can dynamically add new menus on CMS systems
-  * And access control system for different roles based rules defined by the admin
-  * Export data for excel
+  * Access control system for different roles based rules defined by the admin
+  * Export data in excel
 
 * Dynamic router
-
   - The menu is generated based on the data on database
-
   - Access control for different roles
 
     <div>
@@ -221,7 +219,7 @@ CMS screenshots below:
 
 ## Support
 
-* If you have any questions, please contact me sunpled@gmail.com or contact WeChat: suency
+* If you have any questions, please contact me info@rabbitgo.io， or sunpled@gmail.com
 
 ​	
 

@@ -39,54 +39,53 @@
   
  
 ## Solution Overview
-    <div>
-      <img src=https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50f36e2d-6642-49ae-92c9-87abe65b6b7d/Screenshot_2023-03-12_at_23.28.32.png>
-      </div>
+   <div>
+      <img src="https://user-images.githubusercontent.com/122572887/224580978-ccf7e81c-58c1-46fe-8621-67944bd5c3bf.png">
+   </div>
 
 ## Tech Overview
 
-* There are four projects here following are explained for each
+* There are four projects here following are explained for each 
 * Webapp (Learn/Quest to earn):
-  * Core project  is embened on telegram clients and it can be visited via a telegram bot and interacct with Ton Blockchain like earning RBT tokens via learning courses and get NFTs sometimes
-* Webapp-api:
-  * This is a backend service for webapp project which is written in Node.js and providing correspoinding services.
+  * Core project  is embedded on telegram clients and it can be visited via a telegram bot and interact with Ton Blockchain like earning RBT tokens via learning courses and getting NFTs sometimes
+* Webapp-API:
+  * This is a backend service for the TWA project which is written in Node.js and provides corresponding services.
 * Cms(Customer management system):
-  * It is froent end part of a content management system which is for maintenance of webapp project. For example, we can monitor the data transactions daily and pulibish the new learning courses.
-* Cms-api:
-  * This is a backend service for Cms project which is written in Thinkphp framework which is similar to laravel php framework. It is very simple to create a backend service in MVC model.
+  * It is the front-end part of a content management system that is for the maintenance of the web app project. For example, we can monitor the data transactions daily and publish new learning courses.
+* CMS-API:
+  * This is a backend service for the CMS project which is written in the Thinkphp framework which is similar to the laravel php framework. It is very simple to create a backend service in the MVC model.
 
 ## Key Features
-
-* Webapp (Learn/Quest to earn)
-  * Use the rabbitgo_bot to access the learning materials with designed UI
+* Dapp 1: Webapp (Learn/Quest to earn)
+  * Use the rabbitgo_bot (Telegram Web Apps) to access the learning materials with the designed UI
   * Take quizzes based on the learning materials and get results
-  * Users can earn points via attending courses via telegram webbapps
+  * Users can earn points (Eggs) / tokens (RBT) after attending courses and completing quizzes and quests
   * Users can connect wallets to collect tokens and NFTs
-  * Users can redeem points with real tokens which is on Ton Blockchain anytime
-  * Users can acquire NFTs if they satisfy certain conditions
-  * Users can do the quiz to test how they understand the knowledge and have the change to get the points
-  * ChatGPT system for users so that user are able to ask questions within the bots directly 
-
-* Zero Knowledge Proofs for users who would like to protect their data
-  * Based on SNARK mechanism and interaction with AR storage smart contract and Ethreum smart contract
-  * Currently it is under development 
+  * Users can redeem points(Eggs) with real tokens (RBT) which are on Ton Blockchain anytime
+  * Users can acquire SBTs/NFTs if they satisfy certain conditions
+  * Users can do the quiz to test how they understand the knowledge and have the chance to get the points
   
-* CMS features
-  * Data analytics tools that combines both onchain (wallet transaction details) and offchain data (tg users details)
-  * Operations mangagers can monitor the daily activity data online, eg. daily transactions, new user registrations and points they redeem
-  * Operations mangagers/content creators can publish new courses and daily news
-  * Graph management tools which allow the user to upload graph which can be stored in decentralised storage such as FVM and Arweave.
+* Dapp 2: CMS features
+  * Data analytics tools that combine both on-chain (wallet transaction details) and off-chain data (Telegram users details)
+  * Operations managers can monitor the daily activity data online, eg. daily transactions, new user registrations, and points they redeem
+  * Operations managers/content creators can publish new courses and daily news
+  * Graph management tools that allow the user to upload graphs which can be stored in decentralized storage such as FVM and Arweave.
   * Marketing department can use the data to do data analysis for growth
   * Developers can dynamically add new menus on CMS systems
-  * Access control system for different roles based rules defined by the admin
+  * Access control system for different roles-based rules defined by the admin
   * Export data in excel
 
+* Protocols Layer
+  * ChatGPT system for users so that users can ask questions within the bots directly 
+  * Zero-Knowledge Proofs for users who would like to protect their data. Current Design is based on SNARK mechanism. Current interaction with AR storage smart contract and Ethereum smart contract (Under development).
+  * MultiStorage Solution. User are able to store the image and content in multiple storage solutions such as ARweave and FVM via CMS. 
+
 * Dynamic router
-  - The menu is generated based on the data on database
+  - The menu is generated based on the data on the database
   - Access control for different roles
 
 ## Architecture Designs
-    <div>
+   <div>
       <img src=https://raw.githubusercontent.com/suency/rabbitgo_services/main/screenshots/compress/RabbitGo-Tech-Stack.png >
       </div>
 
@@ -221,8 +220,8 @@ CMS screenshots below:
      }
      ```
 
-     3. Configure you database: It's very easy. Just execute the sql file and change the database configuration in the backend configuration file. SQL file will be released later!
-     4. Enjoy!
+    3. Configure you database: It's very easy. Just execute the sql file and change the database configuration in the backend configuration file. SQL file will be released later!
+    4. Enjoy!
 
 ## Support
 

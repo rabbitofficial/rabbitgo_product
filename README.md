@@ -36,6 +36,12 @@
   With [RabbitGo.io](http://RabbitGo.io), you can connect with your audience, share your work, and earn fair compensation for your efforts. Our interoperable social network and digital asset marketplace allow you to build and grow your community in a way that is fair, trustworthy, and inclusive.
 
   We understand the value of your content and the hard work that goes into creating it. That's why we're committed to providing a platform that recognizes and supports your efforts. Whether you're an artist, designer, influencer, or content creator, [RabbitGo.io](http://RabbitGo.io) is here to help you build and grow your community.
+  
+ 
+## Solution Overview
+    <div>
+      <img src=https://s3-us-west-2.amazonaws.com/secure.notion-static.com/50f36e2d-6642-49ae-92c9-87abe65b6b7d/Screenshot_2023-03-12_at_23.28.32.png>
+      </div>
 
 ## Tech Overview
 

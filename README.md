@@ -50,7 +50,7 @@
   * Core project  is embedded on telegram clients and it can be visited via a telegram bot and interact with Ton Blockchain like earning RBT tokens via learning courses and getting NFTs sometimes
 * Webapp-API:
   * This is a backend service for the TWA project which is written in Node.js and provides corresponding services.
-* Cms(Customer management system):
+* CMS(Customer management system):
   * It is the front-end part of a content management system that is for the maintenance of the web app project. For example, we can monitor the data transactions daily and publish new learning courses.
 * CMS-API:
   * This is a backend service for the CMS project which is written in the Thinkphp framework which is similar to the laravel php framework. It is very simple to create a backend service in the MVC model.
